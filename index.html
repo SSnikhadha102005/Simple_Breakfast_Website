@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    /* Author: Snikhadha Sinha */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Breakfast | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Internal CSS for Home Page Specifics -->
+    <style>
+        .home-hero {
+            background-color: var(--cream);
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+            margin-bottom: 40px;
+            align-items: stretch;
+        }
+        .home-hero-img {
+            flex: 1;
+        }
+        .home-hero-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .home-hero-content {
+            flex: 2;
+            background-color: var(--matcha);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+        .home-hero-content h2 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        .home-hero-content h3 {
+            font-size: 22px;
+            font-family: var(--font-body);
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+        .home-main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .category-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .category-card {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .category-card img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border: 3px solid var(--peach);
+        }
+        .category-card h4 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .featured-breakfast {
+            background-color: var(--cream);
+            padding: 30px;
+            text-align: center;
+        }
+        .featured-breakfast img {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .featured-breakfast h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .home-hero { flex-direction: column; }
+            .home-main-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header style="border-bottom: 2px solid #fff;"> <!-- Inline CSS Example -->
+        <div class="header-left">
+            <img src="logo.png" alt="Simple Breakfast Logo">
+            <a href="index.html" class="logo-text">Simple Breakfast</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home-hero">
+            <div class="home-hero-img">
+                <img src="start_your_morning_right.png" alt="A spread of simple, healthy breakfast foods">
+            </div>
+            <div class="home-hero-content">
+                <h2>START YOUR MORNING RIGHT</h2>
+                <h3>SIMPLE RECIPES FOR BUSY STUDENTS</h3>
+                <a href="recipes.html" class="btn">Explore Recipes</a>
+            </div>
+        </section>
+
+        <section class="home-main-grid">
+            <div class="category-stack">
+                <div class="category-card">
+                    <img src="quick-mornings.png" alt="Quick Mornings">
+                    <div>
+                        <h4>Quick Mornings</h4>
+                        <p>Grab-and-go meals, portable coffee, and time-saving hacks for starting the day right without slowing down.</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="healthy-choices.png" alt="Healthy Choices">
+                    <div>
+                        <h4>Healthy Choices</h4>
+                        <p>Fresh, nourishing options full of color and balance — wholesome foods that fuel your day the right way.</p>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <img src="easy-recipes.png" alt="Easy Recipes">
+                    <div>
+                        <h4>Easy Recipes</h4>
+                        <p>Fast, grab-and-go bites and drinks designed for students on the move — energy you can take with you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-breakfast">
+                <img src="featured-breakfast.png" alt="Featured Breakfast of the week">
+                <h3>FEATURED BREAKFAST OF THE WEEK</h3>
+                <p>A warm, student-friendly spotlight dish that brings together fresh fruit, fluffy pancakes, and savory sides — a weekly highlight to inspire your morning routine.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Simple Breakfast | Privacy | Terms</p>
+    </footer>
+
+</body>
+</html>

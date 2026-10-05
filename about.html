@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    /* Author: Snikhadha Sinha */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Breakfast | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Internal CSS for About Page Specifics -->
+    <style>
+        .about-hero {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .about-hero img {
+            width: 40%;
+            object-fit: cover;
+            border: 4px solid var(--matcha);
+        }
+        .about-hero-text {
+            width: 60%;
+            background-color: var(--matcha);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            border: 2px solid var(--peach);
+        }
+        .about-hero-text h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+        .about-hero-text p {
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
+        .about-card {
+            background-color: var(--peach);
+            border: 4px solid var(--matcha);
+            padding: 30px;
+            text-align: center;
+        }
+        .about-card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .about-card p {
+            text-align: left;
+            text-indent: 20px;
+        }
+        .about-images-col {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .about-img-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .about-img-box img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+        }
+        .img-label {
+            background-color: var(--peach);
+            padding: 8px 25px;
+            border-radius: 20px;
+            margin-top: -15px;
+            font-family: var(--font-heading);
+            font-size: 16px;
+            z-index: 2;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 1024px) {
+            .about-grid { grid-template-columns: 1fr 1fr; }
+            .about-images-col { grid-column: span 2; flex-direction: row; }
+        }
+        @media (max-width: 768px) {
+            .about-hero { flex-direction: column; }
+            .about-hero img, .about-hero-text { width: 100%; }
+            .about-grid { grid-template-columns: 1fr; }
+            .about-images-col { grid-column: span 1; flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Simple Breakfast Logo">
+            <a href="index.html" class="logo-text">Simple Breakfast</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <img src="about_simple_breakfast.png" alt="Breakfast bowl and toast">
+            <div class="about-hero-text">
+                <h1>ABOUT SIMPLE BREAKFAST</h1>
+                <p>Helping students start their day with simple, nourishing breakfasts</p>
+            </div>
+        </section>
+
+        <section class="about-grid">
+            <div class="about-card" style="box-shadow: 2px 2px 8px rgba(0,0,0,0.1);"> <!-- Inline CSS Example -->
+                <h2>OUR STORY</h2>
+                <p>Simple Breakfast began as a way to help students start their mornings with ease and confidence. We noticed how often breakfast was skipped or rushed, leaving people tired and unfocused.</p>
+                <p style="margin-top: 15px;">Our goal is to make breakfast simple, approachable, and enjoyable through quick, affordable recipes anyone can make. Today, we share fresh ideas and student-friendly meals designed to bring calm, energy, and intention to every morning.</p>
+            </div>
+            
+            <div class="about-card">
+                <h2>OUR MISSION</h2>
+                <p>Our mission is to make mornings easier for students by providing simple, nourishing, and affordable breakfast ideas that fit into busy schedules. We believe that starting the day with wholesome food builds better habits, clearer focus, and a calmer routine.</p>
+                <p style="margin-top: 15px;">Through approachable recipes, helpful tips, and student-friendly guidance, Simple Breakfast is committed to helping every learner begin their day with confidence, energy, and care.</p>
+            </div>
+
+            <div class="about-images-col">
+                <div class="about-img-box">
+                    <img src="fresh-ingredients.png" alt="Fresh ingredients setup">
+                    <div class="img-label">FRESH INGREDIENTS</div>
+                </div>
+                <div class="about-img-box">
+                    <img src="simple-steps.png" alt="Student preparing meal">
+                    <div class="img-label">SIMPLE STEPS</div>
+                </div>
+                <div class="about-img-box">
+                    <img src="student-friendly.png" alt="Students eating together on grass">
+                    <div class="img-label">STUDENT FRIENDLY</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Simple Breakfast | Privacy | Terms</p>
+    </footer>
+
+</body>
+</html>
